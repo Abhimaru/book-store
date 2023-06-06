@@ -37,17 +37,15 @@ const Register = () => {
   const [roleList, setRoleList] = useState([]);
 
   useEffect(() => {
-  	getRoles();
+    getRoles();
   }, []);
 
   const getRoles = () => {
-  	userService.getAllRoles().then((res) => {
-  		if (res.records.length) {
-  			setRoleList(
-  				res.records.filter((role) => role.id !== Role.Admin)
-  			);
-  		}
-  	});
+    userService.getAllRoles().then((res) => {
+      if (res.records.length) {
+        setRoleList(res.records.filter((role) => role.id !== Role.Admin));
+      }
+    });
   };
 
   const validationSchema = Yup.object().shape({
