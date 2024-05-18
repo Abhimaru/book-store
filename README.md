@@ -1,1 +1,1 @@
-See Live Demo --> https://bookstorebyabhi.netlify.app/register
+See Live Demo --> https://bookstorebyabhi.netlify.app/login
